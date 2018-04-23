@@ -27,6 +27,4 @@
           :output-dir "resources/public/build/js"
           :output-to "resources/public/build/js/client.js"}
 
-        :source-paths ["src"]}}}
-
-  :jvm-opts ["--add-modules" "java.xml.bind"])
+        :source-paths ["src"]}}})
