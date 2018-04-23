@@ -7,7 +7,7 @@
 (defn gif [settings]
   (let [
 
-    ; Setup observer with callback, must be connected after mount and disconnected on onmount
+    ; Setup observer with callback, must be connected after mount and disconnected on unmount
     observer (js/MutationObserver. (fn [mutations]
       (if (boolean (re-find #"uk-active" (aget (nth mutations 0) "target" "classList" "value")))
         (swap! is-gif-visible (fn [] true))
